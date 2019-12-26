@@ -6832,3 +6832,18 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+body {
+min-height:100vh;
+}
+.body-content {
+    min-height:95vh;
+}
+footer {
+    position: fixed;
+    top: 95vh;
+    z-index: 10;
+    background-color: #101010;
+    color: #9d9d9d;
+    width: 100%;
+}

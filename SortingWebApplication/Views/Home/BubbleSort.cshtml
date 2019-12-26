@@ -1,0 +1,57 @@
+﻿@model SortingWebApplication.Models.Model
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    // Model = "~/Models/Model.cs";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" href="~/Content/bootstrap.css" />
+    <link type="text/css" href="~/Content/bootstrap.min.css" />
+    <title>Bubble Sort</title>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h2>Bubble Sort</h2>
+        <p class="lead">Update Coming Soon</p>
+    </div>
+
+    <div>
+        <p>We will update more sections here .... Please wait</p>
+    </div>
+    <br />
+    <hr />
+    @using (Html.BeginForm("Bubble", "Home", FormMethod.Post))
+    {
+        <div class="row" style="width:100%">
+            <i class="info">Please enter numbers with comma seperation concept..</i>
+            <br />
+            <input type="text" id="inBox" name="inBox" style="width:100%" value="@Model.input" />
+        </div>
+        <br />
+        <div class="row">
+
+            <button typeof="submit" class="btn btn-primary col-sm-5">Quick Result &raquo;</button>
+            <span class="col-sm-2"></span>
+            <button typeof="submit" disabled="disabled" class="btn btn-primary disabled col-sm-5">Detailed Result &raquo;</button>
+
+
+        </div>
+        <br />
+        <hr />
+        <div class="row">
+            <div class="panel">
+                <div class="panel-body">
+                    <p id="txtResult">
+                        @Model.output
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>
